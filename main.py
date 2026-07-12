@@ -17,9 +17,9 @@ app = FastAPI(title="Local Semantic Ranking API")
 
 # Load the model once when the server starts.
 # This model runs locally and entirely for free!
-MODEL_NAME = "all-MiniLM-L6-v2"
-model = SentenceTransformer(MODEL_NAME)
 
+MODEL_NAME = "paraphrase-MiniLM-L3-v2"
+model = SentenceTransformer(MODEL_NAME)
 
 class RankRequest(BaseModel):
     query_id: str
